@@ -5,19 +5,19 @@
 Tipe data merupakan pengelompokkan sebuah data berdasarkan beberapa jenis data yang akan digunakan. Pada penjelasan di bawah ini kita akan membahas tiga tipe data yaitu:
 1. Tipe data primitif
 Merupakan tipe data yang tipe data yang paling dasar serta paling sederhana, biasanya sudah disediakan oleh sistem. Berikut macamnya :
-    a. Integer yaitu tipe data yang berjenis bilangan bulat (contoh; 1,-2)
-    b. Float merupakan tipe data yang memiliki jenis nilai bilangan desimal (contih; 2,3)
-    c. Char merupakan data yang biasannya memiliki jenis data huruf abjad dan bisanya digunakan untuk simbol (contoh; X,Y)
-    d. Boolean adalah tipe data yang memilki dua nilai benar atau salah (contoh; TRUE, FALSE) 
+    a. Integer yaitu tipe data yang berjenis bilangan bulat (contoh; 1,-2),
+    b. Float merupakan tipe data yang memiliki jenis nilai bilangan desimal (contih; 2,3),
+    c. Char merupakan data yang biasannya memiliki jenis data huruf abjad dan bisanya digunakan untuk simbol (contoh; X,Y),
+    d. Boolean adalah tipe data yang memilki dua nilai benar atau salah (contoh; TRUE, FALSE).
 2. Tipe data abstrak
 Merupakan tipe data yang kita buat sendiri. berikut contoh tipe data abstrak;
-    a. Pernyataan konstruktif yaitu tipe yang memilki dua karakter 
-    b. pencacahan nilai yaitu tipe data yamg memiliki pencacahan dua nilai karakter huruf besar yang valid
+    a. Pernyataan konstruktif yaitu tipe yang memilki dua karakter,
+    b. pencacahan nilai yaitu tipe data yamg memiliki pencacahan dua nilai karakter huruf besar yang valid,
     c. Kesesuaian pola yaitu kumpulan satu atau beberapa pola pada jenis datanya. 
 3. Tipe data koleksi
 Merupakan tipe data yang digunakan untuk mengelompokkan beberapa nilai. Berikut jenis tipe data koleksi;
-    a. Array merupakan tipe data yang menyimpan beberapa elemen atau tipe data yang serupa
-    b. Vector merupakan salah satu tipe data yang sudah disediakan oleh template Standar Template Library (STL)
+    a. Array merupakan tipe data yang menyimpan beberapa elemen atau tipe data yang serupa,
+    b. Vector merupakan salah satu tipe data yang sudah disediakan oleh template Standar Template Library (STL),
     c. Map merupakan tipe data yang lumayan mirip dengan array namu  memilki index yang memungkinkan bukan integer.
 
 
@@ -67,6 +67,12 @@ return 0;
 ```
 Kode di atas merupakan kode untuk memasukkan operator matematika dengan dua bilangan setelah itu kemudian kode tersebut akan menjalankan nilai yang dimasukkan dengan sesuai operator yang dimasukkan.
 
+#### Output:
+![alt text](https://github.com/xyzall1/Struktur-Data-Assigment/blob/master/MODUL%201.%20TIPE%20DATA/pict/Guided1.png?raw=true)
+kode di atas akan memeberi perintah kepada user untuk menginput operator dan bilangan untuk dioperasikan namun jika operator tidak ada maka akan menghasilkan Error! operator is not correct
+
+
+
 ### 2. [Tipe Data Abstrak]
 
 ```C++
@@ -108,6 +114,11 @@ int main()
 
 Kode di atas merupakan kode yang menggunakan tipe data abstrak yang dapat menyimpan beberapa variabel sekaligus dengan memilki tiga variabel yaitu name, addres, hingga age.
 
+#### Output:
+![alt text](https://github.com/xyzall1/Struktur-Data-Assigment/blob/master/MODUL%201.%20TIPE%20DATA/pict/Guided2.png?raw=true)
+kode di atas akan meghasilkan output berupa kesesuaian nama, addresm hingga age yang sudah di inputkan pada program di atas
+
+
 ### 3. [Tipe Data Koleksi ]
 
 ```C++
@@ -135,6 +146,11 @@ int main()
 ```
 
 Kode di atas merupakan kode yang menggunakan tipe koleksi yang di mana menggunakan array untuk menyimpan beberapa nilai bilangan bulat atau integer.
+
+#### Output:
+![alt text](https://github.com/xyzall1/Struktur-Data-Assigment/blob/master/MODUL%201.%20TIPE%20DATA/pict/Guided3.png?raw=true)
+Output dari program di atas yaitu kode akan meneyesuaikan antara index dan elemen yang telah dimasukkan pada kode program. untuk lebih jelasnya dapat dilihat pada gambar di atas.
+
 
 ## Unguided 
 
