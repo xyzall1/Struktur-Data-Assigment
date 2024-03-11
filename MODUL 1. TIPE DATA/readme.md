@@ -178,7 +178,9 @@ int main() {
 Kode di atas merupakan kode yang menggunakan jenis data primitif serta menggunakan dua fungsi, kode tersebut akan menjalankan perintah untuk memasukkan bilangan bulat genap atau integer positif lalu akan difaktorkan dengan menggunakan 'factorial' dan dicari berapa jumlah digitnya dengan menggunakan 'digitCount'. kesimpulan dari materi tipe data primitif yaitu tipe data yang paling sederhana dan biasanya rentan dipakai dengan menggunakan tipe data yang berbentuk bilangan karena untuk menyelesaikan permaslahan terkait operasi bilangan. 
 
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![alt text](https://github.com/xyzall1/Struktur-Data-Assigment/blob/master/MODUL%201.%20TIPE%20DATA/pict/Unguided%201.png
+?raw=true)
+
 
 Saat dijalankan kode di atas akan meinta user untuk memasukkan bilangan genap postif, maka bilangan yang dimasukkan yaitu 18 dan otomatis program akan mencari faktorial dari 18 yaitu 6402373705728000 dengan jumlah digit bilangan yang dicari yaitu 2 digit.
 
@@ -227,7 +229,9 @@ int main() {
 Kode di atas merupakan kode yang menggunakan 'struct' untuk mendefinisikan 'person' atau dari tipe data kustom yang memilki tiga variabel nama, age, height. kode tersebut menggunakan 'printDetails()' untuk memanggil tiga variabel di atas kemudian untuk per step sudah dijelaskan pada komentar di atas.
 
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![alt text](https://github.com/xyzall1/Struktur-Data-Assigment/blob/master/MODUL%201.%20TIPE%20DATA/pict/Unguided%202.png
+?raw=true)
+
 
 Saat dijalankan maka kode tersebut akan menjalankan inputan yang sudah dimasukkan pada kode seperti nama, age, dan height pada masing-masing nama orang. 
 
@@ -266,7 +270,8 @@ int main()
 Kode di atas menjalankan sebuah program untuk membuat sebuah map dengan kunci berupa string dan nilai berupa integer, kemudian program akan menambahkan beberapa data ke map tersebut dan menampilkan data dari map menggunakan iterator. fungsi 'map<string, int> untuk membuat sebuah map dengan kunci string dan nilai berupa integer selanjutnya untuk fungsi begin() dan end() digunakan untuk mendapatkan iterator untuk memulai serta mengakhiri iterasi dan jangan lupa jika dalam looping kita harus mengunci dengan 'it->first' dengan nilai 'it->second' untuk iterator dapat mengakses setiap elemen.
 
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![alt text](https://github.com/xyzall1/Struktur-Data-Assigment/blob/master/MODUL%201.%20TIPE%20DATA/pict/Unguided%203.png
+?raw=true)
 
 Saat dijalankan maka kode tersebut akan menjalankan inputan yang sudah dimasukkan pada kode seperti nama dan umur pada masing-masing nama orang. untuk lebih jelasnya dapat dilihat pada gambar di atas 
 
