@@ -5,16 +5,16 @@
 Tipe data merupakan pengelompokkan sebuah data berdasarkan beberapa jenis data yang akan digunakan. Pada penjelasan di bawah ini kita akan membahas tiga tipe data yaitu:
 1. Tipe data primitif
 Merupakan tipe data yang tipe data yang paling dasar serta paling sederhana, biasanya sudah disediakan oleh sistem. Berikut macamnya :
-    a. Integer yaitu tipe data yang berjenis bilangan bulat (contoh; 1,-2),
-    b. Float merupakan tipe data yang memiliki jenis nilai bilangan desimal (contih; 2,3),
-    c. Char merupakan data yang biasannya memiliki jenis data huruf abjad dan bisanya digunakan untuk simbol (contoh; X,Y),
-    d. Boolean adalah tipe data yang memilki dua nilai benar atau salah (contoh; TRUE, FALSE).
-2. Tipe data abstrak
+a. Integer yaitu tipe data yang berjenis bilangan bulat (contoh; 1,-2),
+b. Float merupakan tipe data yang memiliki jenis nilai bilangan desimal (contih; 2,3),
+c. Char merupakan data yang biasannya memiliki jenis data huruf abjad dan bisanya digunakan untuk simbol (contoh; X,Y),
+d. Boolean adalah tipe data yang memilki dua nilai benar atau salah (contoh; TRUE, FALSE).
+3. Tipe data abstrak
 Merupakan tipe data yang kita buat sendiri. berikut contoh tipe data abstrak;
     a. Pernyataan konstruktif yaitu tipe yang memilki dua karakter,
     b. pencacahan nilai yaitu tipe data yamg memiliki pencacahan dua nilai karakter huruf besar yang valid,
     c. Kesesuaian pola yaitu kumpulan satu atau beberapa pola pada jenis datanya. 
-3. Tipe data koleksi
+4. Tipe data koleksi
 Merupakan tipe data yang digunakan untuk mengelompokkan beberapa nilai. Berikut jenis tipe data koleksi;
     a. Array merupakan tipe data yang menyimpan beberapa elemen atau tipe data yang serupa,
     b. Vector merupakan salah satu tipe data yang sudah disediakan oleh template Standar Template Library (STL),
