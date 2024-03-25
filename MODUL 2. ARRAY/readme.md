@@ -86,7 +86,7 @@ int main()
 }
 
 ```
-Program di atas merupakan program yang menampilkan array tiga dimensi. Seperti biasa karena kita menggunakan bahasa c++ jadi kita memulai dengan library 'iostream', lalu diikuti dengan membuat fungsi dengan main(), kode di atas akan membuat array dengan tiga dimensi dengan ukuran 2x3x3 yang berarti dua slice lalu setiap slice memiliki tiga layer dan setiap layer memiliki tiga elemen. lalu program dilanjutkan dengan memasukkan elemen ke dalam array dengan mengguanakan loop yang kan mengulangi semua dimensi array serta meminta input dari user dan program tersebut juga akan menampilkan elemen yang dimasukkan dengan menggunakan loop yang akan mengulangi semua dimensi array dan menampilkan setiap elemen
+Program di atas merupakan program yang menampilkan array tiga dimensi. Seperti biasa karena kita menggunakan bahasa c++ jadi kita memulai dengan library 'iostream', lalu diikuti dengan membuat fungsi dengan main(), kode di atas akan membuat array dengan tiga dimensi dengan ukuran 2x3x3 yang berarti dua slice lalu setiap slice memiliki tiga layer dan setiap layer memiliki tiga elemen. lalu program dilanjutkan dengan memasukkan elemen ke dalam array dengan mengguanakan loop yang kan mengulangi semua dimensi array serta meminta input dari user dan program tersebut juga akan menampilkan elemen yang dimasukkan dengan menggunakan loop yang akan mengulangi semua dimensi array dan menampilkan setiap elemen.
 
 #### Output:
 (![Cuplikan layar 2024-03-25 094526](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/b9027efa-93dd-41f8-8424-60f6fa3b79a3)
@@ -358,5 +358,7 @@ Hal yang dapat kita simpulkan pada materi array kali ini yaitu, array memiliki p
 
 ## Referensi
 [1] N. Charibaldi, "Modul Kuliah Algoritma Pemrograman II," Edisi Kedua, Yogyakarta, 2004.
+
 [2] D.B.A Kizi dan B.D. Irmatova., USE OF DIFFERENT ALGORITHMS AND APPLICATION OF SOFTWARE PRODUCT CREATION SEQUENCES IN ORGANIZING COMPLEX STRUCTURED PROJECTS //Educational Research in Universal Sciences. – 2023. – Т. 2. – NO. 11. – С. 170-173.
+
 [3] H. Ellis., S. Sartaj., dan R. Sanguthevar, "Computer Algorithms / C++," Computer Science Press, 1998.
