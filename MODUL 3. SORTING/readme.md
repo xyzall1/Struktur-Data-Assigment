@@ -6,16 +6,22 @@
 Pengurutan (sorting) yaitu suatu proses mengurutkan data dengan suatu aturan tertentu , sehingga akan tersusun secara teratur sesuai dengan aturang yang berlaku [1].Pengurutan ini dapat dilakukan dengan cara ascending dan discending serta digunakan juga untuk mengururtkan daya yang bertipe angka atau karakter. Atau hal lain juga dapat dikatakan bahwasanny sorting merupakan proses pengurutan data yang sebelumnya disususn secara acak atau tak teratur menjadi urut. Pengururtan dapat dilakukan dengan metode ascending atau nilai terkecil hingga terbesar maupun juga sebaliknya yaitu disebut dengan descending yaitu dari nilai terbesar ke nilai terkecilnya.
 
 2. Jenis Sorting
-A. Selection Sort, yang merupakan metode pengurutan yang membandingkan elemen yang sekarang dengan elemen berikutnya sampai ke elemen yang terakhir. Lalu jika ditemukan elemen lain yang lebih kecil dari elemen sekarang maka dicatat posisinya dan langsung ditukar. Atau dengan kata lain Metode selection Sort merupakan pemilihan dari suatu nilai yang terkecil dan kemudian menukarnya dengan elemen paling awal, lalu membandingkan dengan elemen yang sekarang dengan elemen-elemen berikutnya samapai dengan elemen terakhir, perbandingan dilakukan terus-menerus sampai tidak ada lagi pertukaran data [2]. Metode selection sort memilih nilai minimum kemudian bertukar dengan item pertama lalu bandingkan berikutnya hingga tidak ada pertukaran [5].
 
-B. Bubble Sort, yang merupakan suatu algoritma pengurutan sederhana yang digunakan untuk mengurutkan data-data dalam sebuah array [3]. Algoritma ini akan berkerja dengan cara membandingkan nilai tiap elemen array dengan elemen array berikutnya serta menukar nilainya jika sesuai dengan kondisi yang diperoleh terpenuhi. Proses ini akan terus berulang hingga seluruh elemen array dalam tabel yang telah diproses urut. Pengurutan dengan metode ini dapat dikatakan paling lambat dan paling tidak efesien dibandingkan dengan elemen pengurutan lain yang umum digunakan. Bahkan dalam kasus terbaik (yaitu list sudah terurut), kompleksitas algorita pengurutan gelembung yaitu O(n). Namun dalam kasus umum kompleksitas metode ini yaitu O(n^2). Dengan unterval data antara 100 sampai 1000 elemen dengan waktu eksekusi  dengan satuan second (s) [4].
+    2.1 Selection Sort, yang merupakan metode pengurutan yang membandingkan elemen yang sekarang dengan elemen berikutnya sampai ke elemen yang terakhir. Lalu jika ditemukan elemen lain yang lebih kecil dari elemen sekarang maka dicatat posisinya dan langsung ditukar. Atau dengan kata lain Metode selection Sort merupakan pemilihan dari suatu nilai yang terkecil dan kemudian menukarnya dengan elemen paling awal, lalu membandingkan dengan elemen yang sekarang dengan elemen-elemen berikutnya samapai dengan elemen terakhir, perbandingan dilakukan terus-menerus sampai tidak ada lagi pertukaran data [2]. Metode selection sort memilih nilai minimum kemudian bertukar dengan item pertama lalu bandingkan berikutnya hingga tidak ada pertukaran [5].
 
-C. Insertion Sort, yang merupakan metode pertengahan artinya metode ini memiliki kecepatan rata-rata antara metode primitif (bubble dan selection) dan modern (merge dan quick). Lalu metode ini didasarkan terhadap sebuah kunci yang diambil terhadap elemen kedua pada sebuah larik, lalu meyisipkan elemen tersebut jika kondisi percabangan terpenuhi. Metode Penyisipam ini bertujuan untuk menjadikan bagian sisi kiri larik terurutkan sampai dengan seluruh larik berhasil diurutkan. Kompleksitas Insertion sort sendiri yaitu kondisi terbaik (best case) tercapai jika data telah terurut. Hanya satu perbandingan dilakukan untuk setiap posisi i, sehingga terdapat n-1 perbandingan, atau O (n)^6.
 
-3. Kompleksitas waktu 
-A. Bubble Sort, kompleksitas waktu untuk bubble sort yaitu O(n^2) di mana jumlah elemen dalam array yang diurutkan karena Bubble Sort memiliki dua nested loop yang di mana satu loop luar untuk mencari semua elemen array dan satu loop untuk membandingkan dan menukar elemen-elemen yang tidak terurut.
-B. Selection Sort, kompleksitas waktu untuk selection sort yaitu O(n^2). Dalam hal ini iterasi pada loop luar akan mencari elemen terkecil dari bagian tidak terurut dari array dan menukarnya dengan elemen pertama dari bagian tidak terurut tersebut. Dengan cara ini, setiap iterasi loop luar akan memindahkan elemen terkecil ke posisi yang sesuai dalam array.
-C. Insertion Sort, kompleksitas waktunya yaitu O(n^2) di mana n merupakan jumlah elemen dalam array yang diurutkan. Meskipun Insertion Sort memilki performa yang lebih baik daripada Bubble Sort atau Selection Sort dalam kasus tertenu, seperti pada array yang hampir terurut maka kompleksitas waktu terburuknya tetap O(n^2)
+    2.2 Bubble Sort, yang merupakan suatu algoritma pengurutan sederhana yang digunakan untuk mengurutkan data-data dalam sebuah array [3]. Algoritma ini akan berkerja dengan cara membandingkan nilai tiap elemen array dengan elemen array berikutnya serta menukar nilainya jika sesuai dengan kondisi yang diperoleh terpenuhi. Proses ini akan terus berulang hingga seluruh elemen array dalam tabel yang telah diproses urut. Pengurutan dengan metode ini dapat dikatakan paling lambat dan paling tidak efesien dibandingkan dengan elemen pengurutan lain yang umum digunakan. Bahkan dalam kasus terbaik (yaitu list sudah terurut), kompleksitas algorita pengurutan gelembung yaitu O(n). Namun dalam kasus umum kompleksitas metode ini yaitu O(n^2). Dengan unterval data antara 100 sampai 1000 elemen dengan waktu eksekusi  dengan satuan second (s) [4].
+
+
+    2.3 Insertion Sort, yang merupakan metode pertengahan artinya metode ini memiliki kecepatan rata-rata antara metode primitif (bubble dan selection) dan modern (merge dan quick). Lalu metode ini didasarkan terhadap sebuah kunci yang diambil terhadap elemen kedua pada sebuah larik, lalu meyisipkan elemen tersebut jika kondisi percabangan terpenuhi. Metode Penyisipam ini bertujuan untuk menjadikan bagian sisi kiri larik terurutkan sampai dengan seluruh larik berhasil diurutkan. Kompleksitas Insertion sort sendiri yaitu kondisi terbaik (best case) tercapai jika data telah terurut. 
+
+3. Kompleksitas Waktu 
+
+    3.1 Bubble Sort, kompleksitas waktu untuk bubble sort yaitu O(n^2) di mana jumlah elemen dalam array yang diurutkan karena Bubble Sort memiliki dua nested loop yang di mana satu loop luar untuk mencari semua elemen array dan satu loop untuk membandingkan dan menukar elemen-elemen yang tidak terurut.
+
+    3.2 Selection Sort, kompleksitas waktu untuk selection sort yaitu O(n^2). Dalam hal ini iterasi pada loop luar akan mencari elemen terkecil dari bagian tidak terurut dari array dan menukarnya dengan elemen pertama dari bagian tidak terurut tersebut. Dengan cara ini, setiap iterasi loop luar akan memindahkan elemen terkecil ke posisi yang sesuai dalam array.
+
+    3.3 Insertion Sort, kompleksitas waktunya yaitu O(n^2) di mana n merupakan jumlah elemen dalam array yang diurutkan. Meskipun Insertion Sort memilki performa yang lebih baik daripada Bubble Sort atau Selection Sort dalam kasus tertenu, seperti pada array yang hampir terurut maka kompleksitas waktu terburuknya tetap O(n^2).
 
 
 ## Guided 
@@ -313,11 +319,16 @@ Sorting merupakan Pengurutan (sorting) yaitu suatu proses mengurutkan data denga
 
 ## Referensi
 [1] S. A. Yoga, N.A. Rizki, R. Laili, H.S. Reno, dan S. A, "Penerapan Algoritma Selection Sort untuk Melakukan Pengurutan Data dalam Bahasa Pemograman PHP", vol 1, no 4, pp 191, Desember 2022.
+
 [2] Lasriana dan G. Aris, "Sistem Informasi Apotek Berbasis WEB Menggunakan Algoritma Sequential Search dan Selection Sort.", vol 7, no 2, pp 392-401, 2022.
+
 [3] T.A Davina, F. Ihza, F.F. Muhammad, A.W. Nur dam F. Ridwan, "Analisis Kompleksitas Waktu Menggunakan Sorting Algorithm pada Pengaplikasian Fitur Pengurutan Harga dari Terendah dan Tertinggi di Shopee.", vol 3, No 1, pp 68-80, Mei 2024.
+
 [4] Friend, E. H., “Sorting on electronic computer systems”, Journal of the ACM,No 3, Vol 4, pp.134–168, 1956.
+
 [5] K. Priambodo dan J. S. Wibowo, “Proceeding SENDIU
 2021 IMPLEMENTASI ALGORITMA SELECTION
 SORT UNTUK PERANGKINGAN POIN PADA ESPORTS TOURNAMENT GARUDA LEAGUE,” no.20, pp .978–979, 2021.
+
 [6] A.H. Saptadi, D.W. Sari., "Analisis Algoritma Insertion Sort, Merge Sort dan Implementasinya dalam Bahasa Pemograman C++", Jurnal Infotel, No 2, Vol 4, November 2012.
 
