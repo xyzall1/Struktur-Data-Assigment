@@ -15,7 +15,7 @@
     ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/65d0b59a-2d0b-401b-8318-0b3bf477c444)
 
     Pada gambar di atas merupakan proses rangkainan sequential search lalu akan melakukan proses rangkaian pencarian data yang dilakukan secara terurut dan dari indeks ke 0 sampai indeks ke-n pada gambar tersebut terdapat delapan indeks dalam array dan juga terdapat delapan value. Proses yang dilakukan yaitu :
-
+    
         1. Permintaan pencarian data, yaitu 10 (x=10).
         2. Lalu proses iterasi untuk pencarian data :
             1 = 10(false!)
@@ -27,12 +27,24 @@
     B. Binary Search 
 
     Binary Search ialah satu proses algoritma yang digunakan untuk proses pencarian data yang terurut , jika data belum terurut maka harus dilakukan proses pengurutan (sorting) terlebih dahulu yang artinya proses pencarian data tidak akan dapat dilakukan jika data tidak terurut [4]. Binary search sendiri memiliki beberapa prinsip seperti : 
-
-        1. Diambil posisi awal 1 dan posisi akhir = N, kemudian dicari posisi data tengah dengan rumus (posisi awal + posisi akhir)
+    
+        1. Diambil posisi awal 1 dan posisi akhir = N, kemudian dicari posisi data tengah dengan rumus (posisi awal + posisi akhir).
         2. Data yang dicari dibandingkan dengan data tengah. Jika lenih kecil, proses dilakukan kembali namun posisi terakhir dianggap sama dengan     posisi tengah -1. Jika lebih besar, proses dilakukan kembali namun posisi awal dianggap sama dengan posisi tengah +1 [5].
         3. Demikian seterusnya sampai data tengah sama dengan yang dicari.
     
+    Berikut contoh penerapannya yang akan dijelaskan oleh gambar dan penjelasannya :
     
+   ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/bd797b8e-8a11-4cd5-af0e-ea22ff0b2372)
+
+   Berikut penjelasan pada gambar di atas dalam proses Binary Search :
+   
+        1. Kita akan cari angka 17, dibagi menjadi dua terlebih dahulu left and right
+        2. Dapatkan titik tengah (mid) adalah angka 13 
+        3. 17 > 13 (kemungkinan angka 17 di sebelah kanan)
+        4. Abaikan nilai sebelah kiri dan temuka nilai mid bagian kanan yaitu 18. (17<18) pencarian difokuskan ke kiri
+        5. mid yaitu 17. mid = nilai yang dicari yaitu 17.
+        
+        
 
 
 
