@@ -3,30 +3,48 @@
 
 ## Dasar Teori
 1. Pengertian
-Searching merupakan serangkaian langkah atau intruksi yang digunakan untuk memcari elemen atu informasi tertentu di dalam suatu dataset yang di mana tujuannya yaitu menemukan posisi atau keberadaan elemen yang dicari atau dalam algoritma struktur data search dijadikan salah satu teknik penting dalam menyelesaikan berbagai masalah [1]. Atau jika saya berpendapat searching merupakan sebuah proses pencarian untuk nilai tertentu yang dimiliki oleh suatu data lalu pada saat proses pencariannya ini setiap nilai akan dibandingkan tiap-tiap elemen dan array dengan data yang akan kita cari lalu nantinya akan mengambil indeks atau posisi dari data lalu akan diproses dengan perulangan.
+
+    Searching merupakan serangkaian langkah atau intruksi yang digunakan untuk memcari elemen atu informasi tertentu di dalam suatu dataset yang di mana tujuannya yaitu menemukan posisi atau keberadaan elemen yang dicari atau dalam algoritma struktur data search dijadikan salah satu teknik penting dalam menyelesaikan berbagai masalah [1]. Atau jika saya berpendapat searching merupakan sebuah proses pencarian untuk nilai tertentu yang dimiliki oleh suatu data lalu pada saat proses pencariannya ini setiap nilai akan dibandingkan tiap-tiap elemen dan array dengan data yang akan kita cari lalu nantinya akan mengambil indeks atau posisi dari data lalu akan diproses dengan perulangan.
 
 2. Jenis
-A. Sequential Search
-Sequential Search merupakan metode searching dapat disebut dengan pencarian lurus (linear search) atau dengan nama lain yaitu pencarian berkelanjutan [2]. Jadi pada metode ini  setiap elemen dalam array akan dibandingkan secara berurutann yang akan dimulai dari elemen pertama sampai elemen yang ingin ditemukan atau semua elemen yang telah dibandingkan. Untuk lebih jelasnya kita berikan contoh seperti di bawah ini.
 
-![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/65d0b59a-2d0b-401b-8318-0b3bf477c444)
+    A. Sequential Search
 
-Pada gambar di atas merupakan proses rangkainan sequential search lalu akan melakukan proses rangkaian pencarian data yang dilakukan secara terurut dan dari indeks ke 0 sampai indeks ke-n pada gambar tersebut terdapat delapan indeks dalam array dan juga terdapat delapan value. Proses yang dilakukan yaitu :
-    1. Permintaan pencarian data, yaitu 10 (x=10).
-    2. Lalu proses iterasi untuk pencarian data :
-        1 = 10(false!)
-        2 = 10(false!)
-        5 = 10(false!)
-        10 = 10 (true) outputnya yaitu "Ada" terdapat pada indeks ke-3
-        jika sampai pengurutan data yang terakhir tidak menemukan, maka outputnya yang dihasilkan yaitu "data yang dicari tidak ada" [3]. 
+    Sequential Search merupakan metode searching dapat disebut dengan pencarian lurus (linear search) atau dengan nama lain yaitu pencarian berkelanjutan [2]. Jadi pada metode ini  setiap elemen dalam array akan dibandingkan secara berurutann yang akan dimulai dari elemen pertama sampai elemen yang ingin ditemukan atau semua elemen yang telah dibandingkan. Untuk lebih jelasnya kita berikan contoh seperti di bawah ini.
 
-B. Binary Search 
-Binary Search ialah satu proses algoritma yang digunakan untuk proses pencarian data yang terurut , jika data belum terurut maka harus dilakukan proses pengurutan (sorting) terlebih dahulu yang artinya proses pencarian data tidak akan dapat dilakukan jika data tidak terurut [4]. Binary search sendiri memiliki beberapa prinsip seperti : 
-    1. Diambil posisi awal 1 dan posisi akhir = N, kemudian dicari posisi data tengah dengan rumus (posisi awal + posisi akhir)
-    2. Data yang dicari dibandingkan dengan data tengah. Jika lenih kecil, proses dilakukan kembali namun posisi terakhir dianggap sama dengan posisi tengah -1. Jika lebih besar, proses dilakukan kembali namun posisi awal dianggap sama dengan posisi tengah +1 [5].
-    3. Demikian seterusnya sampai data tengah sama dengan yang dicari.
+    ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/65d0b59a-2d0b-401b-8318-0b3bf477c444)
 
+    Pada gambar di atas merupakan proses rangkainan sequential search lalu akan melakukan proses rangkaian pencarian data yang dilakukan secara terurut dan dari indeks ke 0 sampai indeks ke-n pada gambar tersebut terdapat delapan indeks dalam array dan juga terdapat delapan value. Proses yang dilakukan yaitu :
+    
+        1. Permintaan pencarian data, yaitu 10 (x=10).
+        2. Lalu proses iterasi untuk pencarian data :
+            1 = 10(false!)
+            2 = 10(false!)
+            5 = 10(false!)
+            10 = 10 (true) outputnya yaitu "Ada" terdapat pada indeks ke-3
+            jika sampai pengurutan data yang terakhir tidak menemukan, maka outputnya yang dihasilkan yaitu "data yang dicari tidak ada" [3]. 
 
+    B. Binary Search 
+
+    Binary Search ialah satu proses algoritma yang digunakan untuk proses pencarian data yang terurut , jika data belum terurut maka harus dilakukan proses pengurutan (sorting) terlebih dahulu yang artinya proses pencarian data tidak akan dapat dilakukan jika data tidak terurut [4]. Binary search sendiri memiliki beberapa prinsip seperti : 
+    
+        1. Diambil posisi awal 1 dan posisi akhir = N, kemudian dicari posisi data tengah dengan rumus (posisi awal + posisi akhir).
+        2. Data yang dicari dibandingkan dengan data tengah. Jika lenih kecil, proses dilakukan kembali namun posisi terakhir dianggap sama dengan     posisi tengah -1. Jika lebih besar, proses dilakukan kembali namun posisi awal dianggap sama dengan posisi tengah +1 [5].
+        3. Demikian seterusnya sampai data tengah sama dengan yang dicari.
+    
+    Berikut contoh penerapannya yang akan dijelaskan oleh gambar dan penjelasannya :
+    
+   ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/bd797b8e-8a11-4cd5-af0e-ea22ff0b2372)
+
+   Berikut penjelasan pada gambar di atas dalam proses Binary Search :
+   
+        1. Kita akan cari angka 17, dibagi menjadi dua terlebih dahulu left and right
+        2. Dapatkan titik tengah (mid) adalah angka 13 
+        3. 17 > 13 (kemungkinan angka 17 di sebelah kanan)
+        4. Abaikan nilai sebelah kiri dan temuka nilai mid bagian kanan yaitu 18. (17<18) pencarian difokuskan ke kiri
+        5. mid yaitu 17. mid = nilai yang dicari yaitu 17.
+        
+        
 
 
 
@@ -315,7 +333,11 @@ Searching merupakan serangkaian langkah atau intruksi yang digunakan untuk memca
 
 ## Referensi
 [1] Sitorus, Lamhot, “Algoritma dan Pemrograman”, Andi, Yogyakarta, 2015.
+
 [2] F. Teknik and U. Muhammadiyah, “Penerapan Algoritma Squential Search With Sentinel Pada Aplikasi Katalog Buku Perpustakaan”, vol. 17, no. 2, pp. 15–19, 2021.
+
 [3] W. S. Wafiqah, A. Septi, dan R. Ben, "Penggunaan Algoritma Sequential Searching pada Aplikasi Perpustakaan Berbasis Web", vol. 7, no. 2, pp.294-302, 2022.
+
 [4] S. D. J. Bernad, Y. Ade, T. J. Nancy, "Implementasi Algoritma Binary Search pada pencarian Data Jemaat Gereja HKBP Manado", vol. 9, no. 1, pp. 18-23, 2022. 
+
 [5] O. Onsardi, M. Muntahanah, R. Toyib, "Penerapan Algoritma Binary Search dalam Pencarian Data Potensi Investasi di Kabupaten Seluma dengan Smartphone", vol. 3, no. 3, pp. 129-136, 2020.
