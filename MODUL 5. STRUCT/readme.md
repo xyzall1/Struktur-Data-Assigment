@@ -325,6 +325,9 @@ Struct yaitu salah satu tipe data yang berisikan kumpulan variabel-variabel sert
 
 ## Referensi
 [1] Aho, Hopcroft, Ullman, "Data Structures and Algorithms", Prentice Hall, 1987.
+
 [2] Sjukani, Moh, "Struktur Data (Algortima dan Struktur Data dengan C++", Jakarta : Mitra Wacana Media, 2012).
+
 [3] Sari, R., Pangaribuan, H., & Hasibuan, R. (2020). Implementasi Struct untuk Menyimpan Data Mahasiswa dan Nilai Mata Kuliah pada Sistem Informasi Akademik. Jurnal Komputer dan Sistem Informasi, 11(1), 1-10.
+
 [4] Microsoft. (n.d.). Struct (C++). Retrieved April 29, 2024, from https://learn.microsoft.com/en-us/cpp/cpp/struct-cpp?view=msvc-170
