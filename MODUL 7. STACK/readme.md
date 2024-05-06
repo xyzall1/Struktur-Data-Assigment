@@ -3,61 +3,56 @@
 
 ## Dasar Teori
 1. Pengertian
-Struct yaitu salah satu tipe data yang berisikan kumpulan variabel-variabel serta bernaung dalam satu nama yang sama serta memilki kaitan satu sama lain [1]. Dalam struct kita dapat memilki variabel-variabel yang bertipe data yang sama atau berbeda, bahakan struct sendiri dengan menyimpan variabel yang bertipe data array atau struct itu sendiri [2]
+Stack merupakan suatu metode dalam menyimpan atau mengambil sebuah data dari maupun ke memori [1]. Stack ini dapat diibaratkan sebuah tumpukan barang yang hanya memiliki pintu di atasnya (memasukkan dan mengambil barang hanya dapat dilakukan melalui pintu itu). Jika kita analogikan terhadap kehidupan sehari-hari adalah seperti tumpukan piring yang ada pada sebuah restoran lalu tumpukannya akan ditambah pada bagian paling atas pula. Jadi dapat diambil kesimpulan stack adalah First in Last Out (FILO) dan Last In First Out (LIFO)
 
-2. Cara Menggunakan Struct
-Penggunaan atau pemakaian tipe data struct dilakukan dengan membuat suatu variabel yang bertipe data struct tersebut. Pengaksesan elemen struct yang akan dilakukan secara individual dengan menyebutkan nama variabel struct diikuti dengan operator titik (.) Seperti pada kode di bawah ini :
+![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/a627ba33-c5cf-4cbc-8f5d-d668471a6b36)
+Gambar di atas merupakan sebuah ilustrasi terjakdinya stack jika kita adaptasikan pada kehidupan sehari-hari
 
-3. Pengelompokan Data
-Struct memungkinkan kita untuk mengelompokkan data terkait bersama-sama. Ini sangat berguna ketika memiliki sejumlah variabel yang saling terkait dan ingin memperlakukan mereka sebagai satu kesatuan. Misalnya, dalam pengelompokan mahaiswa di kelas, kita dapat menggunakan struct untuk menyimpan informasi seperti nama, NIM, umur, asal daerah dan informasi lainnya dalam satu unit [3].
+2. Operasi yang Terjadi dalam Stack
 
-4. Penggunaan Struct
-Penggunaan struct memiliki beberapa pilihan untuk mendeklarasikan variabel ketika tipe struktur ditentukan dengan menempatkan satu atau lebih nama variabel yang dipisahkan koma di antara kurung kurawal penutup dan titik koma. Variabel struktur dapat diinisialisasi. Inisialisasi setiap variabel harus diapit kurung kurawal.
+![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/d7a33cc3-5a14-4ad9-8598-2e5612ae3d78)
+Gambar operasi yang terjadi dalam stack.
 
-```C++
-#include <iostream>
+    1. Proses deklarasi yaitu proses pendeklarasian stack.
+    2. Proses isempty yaitu proses pemeriksaan apakah stack dalam keadaan kosong atau tidak.
+    3. Proses isfull yaitu sebuah proses pemeriksaan stack sudah penuh atau belum.
+    4. Proses inisialisasi yaitu merupakan proses stack kosong atau bisanya dengan pemberian nilai untuk top
 
-using namespace std;
+3. Implementasi Stack
+    1. Implementasi stack dengan Array
+    Array adalah implementasi stack yang paling sederhana serta memeberikan akses acak kepada pengguna berdasarkan indeks. Kelebihan dari implementasi stack menggunakan array yaitu terdapat kemudahan dalam pproses implementasi. Namun kekurangnannya array masih tergolong flesibel. Selain itu, ukuran array tidak dapat berubah secara dinamin sesuai dengan kebutuhan proses [2].
+    2. Implementasi stack dengan Linked List
+    Jika menggunakan linked list, maka operasi push dapat digantikan dengan cara addEd Front serta operasi pop yang dapat diganti dengan menghapus node depan dari lnked list. Seperti halnya array. Kelbihan dari implmentAI ATck menggunakan linked list yaitu kemampuannya untuk bertambah serta berkurang sesuai dengan kebutuhan saat runtime. Namun kekurangannya yaitu dalam prosesnya. Karena membutuhkan alokasi memori tambahan karena menggunakan pointer dalam linked list[2].
 
-// Mendefinisikan struktur buku
-struct buku {
-    string judulBuku;
-    string pengarang;
-    string penerbit;
-    int tebalHalaman;
-    int hargaBuku;
-};
+4. Kelebihan Menggunakan Stack
+    1. Membantu mengelola data dengan metode LIFO
+    2. Membersihkan objek secara otomatis
+    3. Tidak gampang rusak
+    4. Ukuran variabel tidak dapat diubah 
+    5. Dapat mengontrol memori secara mandiri
 
-int main() {
-    // Mendeklarasikan variabel favorit dengan tipe buku
-    buku favorit;
+5. Kekurangan Menggunakan Stack
+    1. Memori dalam stack sangat terbatas
+    2. Ada berupa kemungkinan stack akan meluap maupun overflow jika terlalu banyak projek
+    3. Tidak memungkinkan akses yang acak, karena harus mengeluarkan tumpukan paling atas atau terlebih dahulu untuk mengakses paling bawah.
 
-    // Mengisi data ke dalam variabel favorit
-    favorit.judulBuku = "The Alpha Girl's Guide";
-    favorit.pengarang = "Henry Manampiring";
-    favorit.penerbit = "Gagas Media";
-    favorit.tebalHalaman = 253;
-    favorit.hargaBuku = 79000;
+6. Jenis-jenis Stack 
+    1. Register Stack, yang merupakan stack yang hanya mampu menampung data dalam jumlah yang kecil. Kedalam maksimum pada register stack yang cenderung dibatasi karena ukuran unit memorinya sangat kecil dibandingkan dengan memory stack.
+    2. Memory Stack, Pada stack dengan jenis seperti ini maka kedalaman stack cukup fleksibel serta mampu menangani dalam skala yang lebih besar dibandingkan jenis sebelumnya [3].
 
-    // Menampilkan informasi buku favorit
-    cout << "\tBuku Favorit Saya" << endl;
-    cout << "\tJudul Buku : " << favorit.judulBuku << endl;
-    cout << "\tPengarang : " << favorit.pengarang << endl;
-    cout << "\tPenerbit : " << favorit.penerbit << endl;
-    cout << "\tTebal Halaman: " << favorit.tebalHalaman << " halaman" << endl;
-    cout << "\tHarga Buku : Rp " << favorit.hargaBuku << endl;
- 
-    return 0;
-}
+7. Karakteristik Stack 
+    1. stack dapat digunakan ada  banyak algoritma yang berbeda seperti Tower of Hanoi, Tree traversal, rekursi dll.
+    2. Memiliki prinsip operasi Last In First Out, yaitu elemen yang dimasukkan pertama akan muncul terakhir dan sebaliknya.
+    3. Jika tidak mempunyai elemen data kosong, akan tetap dilakukan operasi penghapusan maka akan terjadi stack overflow
+    4. Jika ruang memori yang dialokasikan untuk struktur data stack sudah penuh namun masih dilakukan operasi penyisipan elemen maka akan terjadi stack overflow.
+    5. Penyisipan dan penghapusan terjadi di satu ujung yaitu dari atas tumpukan [4].
 
-```
-5. Cara Membuat Struct
-Struct dapat kita buat dengan kata kunci struct kemudian diikuti dengan nama struct dan isinya.
-![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/cb997fac-ab0e-41aa-b991-e8f0c28c12a4)
-
-
-
-
+8. Fungsi serta kegunaan dalam Stack
+    1. Struktur data dalam stack dapat digunakan untuk evaluasi serta konversi ekspresi aritmatika.
+    2. Stack digunakan dalam manajemen memori.
+    3. Dipakai untuk memproses pemanggilan sebuah fungsi
+    4. Digunakan untuk pemeriksaan tanda kurung
+    5. Stack digunakan dalam pemograman rekursi
 
 ## Guided 
 
@@ -278,19 +273,27 @@ int main() {
 Kode tersebut mengguanakan fungsi reverse words and chars yang akan menerima sebuah string sebagai parameter serta mengembalikan string yang telah diubah dengan urutan kata serta karakter dari belakang ke depan. Kode tersebut bisa menjalankan dengan cara memecah string menjadi kata-kata menggunakan stream, kemudian membalik setiap kata menggunakaan perulangan. Fungsi dari 'reversewordAndChars' ini akan mengambil sebuah sitring sebagai input serta mengembalikan string yang dibalik, lalu pada kode ini memuat adanya 'istringstream' yang berfungsi untuk memecah input menjadi kata-kata individual lalu pada setiap kata nantinya kode akan membalik dengan menggunakan loop yang akan mengulang dari akhir sampai dengan ke awal kata. Lalu saat kata dibalik nantinya akan disimpan di dalam sebuah stack. Dan setelah semua kata dibalik nantinya fungsi ini akan mengambil kata-kata dari stack serta menggabungkannya menjadi sebuah string yang dibalik. Lalu saat ada dalam fungsi 'main' kode akan meminta user untuk menginputkan sebuah kalimat dan kode akan memanggil fungsi 'reverseWordsAndChars' untuk digunakan mengubah input menjadi kalimat yang dibalik.
 
 #### Output
-![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/3242d7e1-0e4c-4912-b854-505bdb586920)
-Pada kode di atas akan menjalankan sebuah data buku favorit saya yang memilki lima variabel yaitu judul buku, pengarang, penerbit, tebal halaman, serta harga buku. Serta pada output ini kode menjalankan deklarasi variabel struct yang berjenis array. Kode akan menjalankan sesuai dengan inputan yang sudah kita masukkan sesuai dengan gambar di atas.
+![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/1a75b92b-4f2a-4104-87d6-ef3f1b9d60d5)
+Saat kode di jalankan, kode akan meminta user untuk menginputkan sebuah kalimat yang di mana kalimat tersebut diminta oleh user minimal tiga kata, lalu saat user sudah menginputkan beberapa kata, maka kode akan menjalankan perintahnya dengan membalik kata serta huruf tersebut. Lalu User akan ditampilkan sebuah hasil yang di mana hasil tersebut ditampilkan sebuah susunan kata yang dibalik dan susunan huruf yang dibalik.
 
 
 ## Kesimpulan
-Struct yaitu salah satu tipe data yang berisikan kumpulan variabel-variabel serta bernaung dalam satu nama yang sama serta memilki kaitan satu sama lain [1]. Dalam struct kita dapat memilki variabel-variabel yang bertipe data yang sama atau berbeda, bahakan struct sendiri dengan menyimpan variabel yang bertipe data array atau struct itu sendiri [2]. Penggunaan atau pemakaian tipe data struct dilakukan xengan membuat suatu variabel yang bertipe data struct tersebut. Pengaksesan elemen struct yang akan dilakukan secara individual dengan menyebutkan nama variabel struct diikuti dengan operator titik (.). Struct akan memungkinkan kita untuk mengelompokkan data terkait bersama-sama.
+1. Stack merupakan suatu metode dalam menyimpan atau mengambil sebuah data dari maupun ke memori.
+2. Operasi Stack terdiri dari proses deklarasi, Proses isempty, Proses isfull yaitu sebuah proses pemeriksaan stack sudah penuh, Proses inisialisasi.
+3. Implementasi stack dapat terjadi dengan array & linked list
+4. Jenis stack ada dua yaitu register stack & memory stack
+5. Kelebihan stack : mengelola data, membersihkan objek, tidak gampang rusak, variabel dapat diubah, dapat mengontrol memori dengan mandiri.
+6. Kekurangan stack : memori terbatas, biasa terjadi stack oferflow, akses yang acak.
+7. Karakteristik stack : dapat digunakan di beberapa algoritma yang berbeda, prinsip LIFO, penyisipan dan penghapusan terjadi di satu ujung dari tumpukan dll.
+8. fungsi Stack : evaluasi ekspresi aritmatika, manajmene memori, pemanggilan sebuah fungsi, pemeriksaan tanda kurung, pemogrmaan rekursi
 
 
 ## Referensi
-[1] Aho, Hopcroft, Ullman, "Data Structures and Algorithms", Prentice Hall, 1987.
+[1] Mulyana, A et al. (2021). Cara mudah mempelajari algoritma dan struktur data (cetakan pertama). DIVA Press.
 
-[2] Sjukani, Moh, "Struktur Data (Algortima dan Struktur Data dengan C++", Jakarta : Mitra Wacana Media, 2012).
 
-[3] Sari, R., Pangaribuan, H., & Hasibuan, R. (2020). Implementasi Struct untuk Menyimpan Data Mahasiswa dan Nilai Mata Kuliah pada Sistem Informasi Akademik. Jurnal Komputer dan Sistem Informasi, 11(1), 1-10.
+[2] Sihombing, E, "Penerapan stack dan queu pada array dan linked list", INFOKOM, vol 7, no 2, 15-24,Desember, 2019.
 
-[4] Microsoft. (n.d.). Struct (C++). Retrieved April 29, 2024, from https://learn.microsoft.com/en-us/cpp/cpp/struct-cpp?view=msvc-170
+[3] A. Maulana, "Memahami Stack, Struktur Data yang Memudahkan Programmer Jalankan Tugasnya" (2021). Diakses pada 5/5/2024 dari https://glints.com/id/lowongan/stack-adalah/
+
+[4] Trivusi, "Struktur Data  Stack : Pengertian, Karakteristik, dan Kegunaannys" (2022). Diakses pada 5/5/2024 dari https://www.trivusi.web.id/2022/07/struktur-data-stack.html
