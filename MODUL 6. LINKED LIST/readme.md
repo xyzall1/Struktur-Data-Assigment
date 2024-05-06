@@ -4,40 +4,51 @@
 ## Dasar Teori
 1. Pengertian
 
-Linked list merupakan salah satu kumpulan elemen data yang disebut sebgai node di mana urutanyya ditentukan oleh suatu pointer [1]. Perlu kita ketahui setiap elemen atau disebut dnegan node dari suatu linked list terdiri atas dua bagian yaitu INFO yang berisikan tentang elemen data yang bersangkutah lalu ada berupa NEXT atau link field / next pointer field yang berisi alamat dari elemen (node) selanjutnya yang dituju.
+    Linked list merupakan salah satu kumpulan elemen data yang disebut sebgai node di mana urutanyya ditentukan oleh suatu pointer [1]. Perlu kita ketahui setiap elemen atau disebut dnegan node dari suatu linked list terdiri atas dua bagian yaitu INFO yang berisikan tentang elemen data yang bersangkutah lalu ada berupa NEXT atau link field / next pointer field yang berisi alamat dari elemen (node) selanjutnya yang dituju.
 
-Berikut ini sebuah contoh linked list yang terdiri atas 4 node :
-![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/8165b91e-82bd-4cff-ad18-122d6a51c207)
-Pada node ke-4 field NEXT yang berisi NULL, artinya node ke-4 tersebut adalah node terakhir. Node dalam linked list tidak selalu harus digambarkan paralel seperti pada gambar di atas. Linke list pada contoh di atas dapat pula digambarkan seperti berikut ini :
-![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/7d27654a-4ce5-4890-8127-01431d345d9a)
-Namun jika linked list disajikan dalam gambar di atas maka akan banyak ruang yang diperlukan untuk menyatakan tempat field pointer serta diperlukan waktu yang lebih banyak untuk mencari suatu node dalam linked list. Di sisi lain juga ada keuntungan berupa jenis data yang berbeda dapat di-link serta operasi Remove dan Insert hanya dilakukan untuk mengubah pointernya saja [2].
+    Berikut ini sebuah contoh linked list yang terdiri atas 4 node :
+    ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/8165b91e-82bd-4cff-ad18-122d6a51c207)
+
+    Pada node ke-4 field NEXT yang berisi NULL, artinya node ke-4 tersebut adalah node terakhir. Node dalam linked list tidak selalu harus digambarkan paralel seperti pada gambar di atas. Linke list pada contoh di atas dapat pula digambarkan seperti berikut ini :
+
+    ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/7d27654a-4ce5-4890-8127-01431d345d9a)
+
+    Namun jika linked list disajikan dalam gambar di atas maka akan banyak ruang yang diperlukan untuk menyatakan tempat field pointer serta diperlukan waktu yang lebih banyak untuk mencari suatu node dalam linked list. Di sisi lain juga ada keuntungan berupa jenis data yang berbeda dapat di-link serta operasi Remove dan Insert hanya dilakukan untuk mengubah pointernya saja [2].
 
 2. Jenis Linked List
 
     A. Single Linked List
-    Single Linked List ini memiliki satu pointer untuk setiap node yang menunjuk ke node berikutnya, artinya hanya satu arah.
-    ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/5ffd2d00-fee9-4921-a060-99a27037fd50)
-    Dapat kita lihat bahwa setiap record mempunyai satu pointer yang menunjuk ke record berikutnya, dengan pengecualian untuk record terakhir yang menunjuk ke record yang tidak ada. Record yang tidak ada tersebut kita definisikan dengan nilai NULL yang artinya juga sebagai akhir suatu List.
+        Single Linked List ini memiliki satu pointer untuk setiap node yang menunjuk ke node berikutnya, artinya hanya satu arah.
 
+    ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/5ffd2d00-fee9-4921-a060-99a27037fd50)
+
+   Dapat kita lihat bahwa setiap record mempunyai satu pointer yang menunjuk ke record berikutnya, dengan pengecualian untuk record terakhir yang menunjuk ke record yang tidak ada. Record yang tidak ada tersebut kita definisikan dengan nilai NULL yang artinya juga sebagai akhir suatu List.
+    
     B. Double Linked List
-    Double Linked List ini memiliki dua pointer yang menunjuk ke node berikutnya dan sebelumnya, artinya memiliki dua arah.
+        Double Linked List ini memiliki dua pointer yang menunjuk ke node berikutnya dan sebelumnya, artinya memiliki dua arah.
+
     ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/eff9df0c-5276-4062-8b49-df43c13fcec8)
+
     Double Linked List memiliki pointer node pertama yang tidak memiliki pendahulu, jadi pointer yang menunjuk ke elemen sebelumnya adalah elemen yang tidak ada atau disebyt dengan NULL serta analog untuk node terakhir di mana pointer yang menunjuk ke elemen berikutnya adalah elemen yang tidak ada [3].
 
 3. Operasi Dasar Pada Linked List
-Ada beberapa aturan yang diberlakukan pada linked list seperti :
-    A. Jika P adalah suatu variabel pointer, maka nilainya adalah alamat atau lokasi dari variabel lain yang dituju [4].
-    B. Operasi yang didefinisikan pada suatu variabel pointer yaitu :
-        - Test apakah sama dengan NULL
-        - Test untuk kesamaan dengan variabel pointer lain
-        - Menetapkan sama dengan NULL
-        - Menetapkan menuju ke node lain
 
-4. Kegunaan Linked List 
+    Ada beberapa aturan yang diberlakukan pada linked list seperti :
+
+    A. Jika P adalah suatu variabel pointer, maka nilainya adalah alamat atau lokasi dari variabel lain yang dituju [4].
+
+    B. Operasi yang didefinisikan pada suatu variabel pointer yaitu :
+        Test apakah sama dengan NULL, test untuk kesamaan dengan variabel pointer lain, menetapkan sama dengan NULL, serta menetapkan menuju ke             node lain [4].
+                           
+5. Kegunaan Linked List 
     A. Linked List dapat digunakan untuk mengimpelmentasikan struktur data lainseperti stack, queue, graf, dll
+
     B. Digunakan untuk melakukan operasi aritmatika pada bilangan long integer
+
     C. Dipakai untuk representasi matriks rongga
+
     D. Digunakan untuk alokasi file yang ditautkan
+
     E. Membantu dalam manajemen memori [5]
 
 
