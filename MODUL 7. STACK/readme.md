@@ -3,16 +3,14 @@
 
 ## Dasar Teori
 1. Pengertian
-Stack merupakan suatu metode dalam menyimpan atau mengambil sebuah data dari maupun ke memori [1]. Stack ini dapat diibaratkan sebuah tumpukan barang yang hanya memiliki pintu di atasnya (memasukkan dan mengambil barang hanya dapat dilakukan melalui pintu itu). Jika kita analogikan terhadap kehidupan sehari-hari adalah seperti tumpukan piring yang ada pada sebuah restoran lalu tumpukannya akan ditambah pada bagian paling atas pula. Jadi dapat diambil kesimpulan stack adalah First in Last Out (FILO) dan Last In First Out (LIFO)
+    Stack merupakan suatu metode dalam menyimpan atau mengambil sebuah data dari maupun ke memori [1]. Stack ini dapat diibaratkan sebuah tumpukan barang yang hanya memiliki pintu di atasnya (memasukkan dan mengambil barang hanya dapat dilakukan melalui pintu itu). Jika kita analogikan terhadap kehidupan sehari-hari adalah seperti tumpukan piring yang ada pada sebuah restoran lalu tumpukannya akan ditambah pada bagian paling atas pula. Jadi dapat diambil kesimpulan stack adalah First in Last Out (FILO) dan Last In First Out (LIFO)
 
-![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/e44d8e12-9068-47cd-85e7-4977d874d3d1)
-Gambar di atas merupakan sebuah ilustrasi terjakdinya stack jika kita adaptasikan pada kehidupan sehari-hari
+    ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/e44d8e12-9068-47cd-85e7-4977d874d3d1)
+    Gambar di atas merupakan sebuah ilustrasi terjakdinya stack jika kita adaptasikan pada kehidupan sehari-hari
 
 2. Operasi yang Terjadi dalam Stack
 
-![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/d7a33cc3-5a14-4ad9-8598-2e5612ae3d78)
-Gambar operasi yang terjadi dalam stack.
-
+    ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/d7a33cc3-5a14-4ad9-8598-2e5612ae3d78)
     1. Proses deklarasi yaitu proses pendeklarasian stack.
     2. Proses isempty yaitu proses pemeriksaan apakah stack dalam keadaan kosong atau tidak.
     3. Proses isfull yaitu sebuah proses pemeriksaan stack sudah penuh atau belum.
