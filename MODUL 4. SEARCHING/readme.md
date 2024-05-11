@@ -14,7 +14,7 @@
 
     ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/65d0b59a-2d0b-401b-8318-0b3bf477c444)
 
-    Pada gambar di atas merupakan proses rangkainan sequential search lalu akan melakukan proses rangkaian pencarian data yang dilakukan secara terurut dan dari indeks ke 0 sampai indeks ke-n pada gambar tersebut terdapat delapan indeks dalam array dan juga terdapat delapan value. Proses yang dilakukan yaitu :
+    Pada gambar di atas merupakan proses rangkainan sequential search lalu akan melakukan proses rangkaian pencarian data yang dilakukan secara terurut dan dari indeks ke 0 sampai indeks ke-n pada gambar tersebut terdapat delapan indeks dalam array dan juga terdapat delapan value. Proses yang dilakukan yaitu:
     
         1. Permintaan pencarian data, yaitu 10 (x=10).
         2. Lalu proses iterasi untuk pencarian data :
