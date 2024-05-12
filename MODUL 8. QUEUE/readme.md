@@ -3,7 +3,7 @@
 
 ## Dasar Teori
 1. Pengertian
-Queue merupakan struktur data di mana data yang pertama kali dimasukkan adalah data yang pertama kali dapat dihapus atau bisa juga disebut dengan struktru data yang menggunakan mekanisme FIFO (First In First Out) [1]. Queue dalam kehidupan sehari-hari diibaratkan seperti antrean penjualan tiket kereta api, di mana orang yang pertama datang adalah orang yang pertama kali dilayani untuk memebeli tiket, jika ada orang baru yang datang akan membeli tiket, maka posisinya berada pada ururtan paling belakang dalam antrean tersebut. Orang yang berada pada posisi terakhir dalam antrean maka adalah orang yang terakhir kali dapat dilayani serta memeperoleh tiket. 
+    Queue merupakan struktur data di mana data yang pertama kali dimasukkan adalah data yang pertama kali dapat dihapus atau bisa juga disebut dengan struktru data yang menggunakan mekanisme FIFO (First In First Out) [1]. Queue dalam kehidupan sehari-hari diibaratkan seperti antrean penjualan tiket kereta api, di mana orang yang pertama datang adalah orang yang pertama kali dilayani untuk memebeli tiket, jika ada orang baru yang datang akan membeli tiket, maka posisinya berada pada ururtan paling belakang dalam antrean tersebut. Orang yang berada pada posisi terakhir dalam antrean maka adalah orang yang terakhir kali dapat dilayani serta memeperoleh tiket. 
 
 ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/e44d8e12-9068-47cd-85e7-4977d874d3d1)
 Gambar di atas merupakan sebuah ilustrasi terjakdinya stack jika kita adaptasikan pada kehidupan sehari-hari
@@ -363,7 +363,7 @@ Wacana Media
 
 [4] A. Aliyanto, "Sistem Pembelajaran Algoritma stack dam queue dengan pendekatan problem based learning untuk mendukung pembelajaran struktur data," Seminar nasional Aplikasi Teknologi Informasi, pp. E29-E33, 2013. 
 
-[5] Trivusi, "Struktur Data Queue: Pengertian, Jenis, dan Kegunaannya", 2023. Diakses pada 12 Mei 2024. https://news.detik.com/berita/d-6500512/3-cara-menulis-daftar-pustaka-dari-internet-beserta-contohnya
+[5] Trivusi, "Struktur Data Queue: Pengertian, Jenis, dan Kegunaannya", 2023. Diakses pada 12 Mei 2024. https://www.trivusi.web.id/2022/07/struktur-data-queue.html
 
 [6] A. S. Putra, “2018 Artikel Struktur Data, Audit Dan Jaringan Komputer,” 2018
 
