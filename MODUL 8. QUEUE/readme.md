@@ -10,20 +10,24 @@
 
     1. Simple Queue
         Simple queue merupakan struktur data queue yang paling dasar di mana ada yang berupa penyisipan item yang dilakukan oleh simpul belakang (rear atau tail) serta adanya penghapusan yang terjadi di simpul depan (front atau head).
+
         ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/fb6e7859-6cd9-468a-941e-83a218396a49)
 
 
     2. Circular Queue
         Pada jenis ini circular queue, memiliki simpul terakhir terhubung ke simpul pertama. Queue jenis ini juga akan dikenal sebagai ring buffer dikarenakan semua ujungnya terhubung ke ujung yang lain. Penyisispan ini terjadi karena di akhri antrean serta penghapusan di depan antrean.
+
         ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/62e65cc1-0c25-4a58-b943-bb52085e5aab)
 
 
     3. Priority Queue
         Merupakan salah satu struktur data queuue yang di mana simpul akan memiliki beberapa prioritas yang telah ditentukan. Simpul dengan prioritas terbesar akan menjadi yang pertama yang akan dihapus dari antrean. Sedangkan penyisipan item terjadi sesuai urutan kedatangannya.
+
         ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/7bc7048e-df36-4faa-822c-332638a17b5e)
 
     4. Double Ended Queue (Dequeue)
         Dalam jenis ini atau Double-ended queue (dequeue), operasi penyisipan serta penghapusan dapat terjadi di ujung depan serta belakang dari queue [2].
+
         ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/4d88e718-8a9d-404a-bac3-39813adc43c0)
 
 3. Karakteristik Queue
