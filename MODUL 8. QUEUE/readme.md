@@ -77,8 +77,6 @@ Gambar di atas merupakan sebuah ilustrasi terjakdinya stack jika kita adaptasika
 
 ## Guided 
 
-### 1. Queue
-
 ```C++
 #include <iostream>
 
@@ -231,53 +229,107 @@ Saat kode dijalankan maka kode akan menjalankan lalu menampilkan sebuah output b
 #### Input :
 ```C++
 #include <iostream>
-#include <stack>
-#include <string>
-#include <sstream>
+
 using namespace std;
 
-string reverseWordsAndChars(string str) {
-    istringstream iss(str);
-    stack<string> s;
-    string word;
+struct Mahasiswa {
+    string nama;
+    string nim;
+};
 
-    while (iss >> word) {
-        string reversedWord = "";
-        for (int i = word.length() - 1; i >= 0; i--) {
-            reversedWord += word[i];
+struct Node {
+    Mahasiswa data;
+    Node* next;
+};
+
+Node* front = nullptr;
+Node* back = nullptr;
+int count = 0;
+
+const int maksimalQueue = 5;
+
+bool isFull() {
+    return count == maksimalQueue;
+}
+
+bool isEmpty() {
+    return count == 0;
+}
+
+void enqueueAntrian(Mahasiswa data) {
+    if (isFull()) {
+        cout << "Antrian Penuh" << endl;
+    } else {
+        Node* newNode = new Node();
+        newNode->data = data;
+        newNode->next = nullptr;
+        if (isEmpty()) {
+            front = newNode;
+            back = newNode;
+        } else {
+            back->next = newNode;
+            back = newNode;
         }
-        s.push(reversedWord);
+        count++;
     }
+}
 
-    string reversed = "";
-    while (!s.empty()) {
-        reversed += s.top();
-        s.pop();
-        if (!s.empty()) {
-            reversed += " ";
+void dequeueAntrian() {
+    if (isEmpty()) {
+        cout << "Antrian kosong" << endl;
+    } else {
+        Node* temp = front;
+        front = front->next;
+        delete temp;
+        count--;
+        if (isEmpty()) {
+            back = nullptr;
         }
     }
+}
 
-    return reversed;
+int countQueue() {
+    return count;
+}
+
+void clearQueue() {
+    while (!isEmpty()) {
+        dequeueAntrian();
+    }
+}
+
+void viewQueue() {
+    Node* temp = front;
+    int i = 1;
+    cout << "Data antrian mahasiswa: " << endl;
+    while (temp != nullptr) {
+        cout << "Nama = " << temp->data.nama << ", NIM = " << temp->data.nim << endl;
+        temp = temp->next;
+        i++;
+    }
+    cout << "Jumlah antrian = " << countQueue() << endl;
 }
 
 int main() {
-    string input;
-    cout << "Kalimat : ";
-    getline(cin, input);
+    Mahasiswa mahasiswa1 = {"Aliana", "2311110008"};
+    Mahasiswa mahasiswa2 = {"Sawafi", "2311110009"};
 
-    string reversed = reverseWordsAndChars(input);
-    cout << "Hasil : " << reversed << endl;
-
+    enqueueAntrian(mahasiswa1);
+    enqueueAntrian(mahasiswa2);
+    viewQueue();
+    dequeueAntrian();
+    viewQueue();
+    dequeueAntrian();
+    viewQueue();
     return 0;
 }
 ```
 #### Interpretasi
-Kode tersebut mengguanakan fungsi reverse words and chars yang akan menerima sebuah string sebagai parameter serta mengembalikan string yang telah diubah dengan urutan kata serta karakter dari belakang ke depan. Kode tersebut bisa menjalankan dengan cara memecah string menjadi kata-kata menggunakan stream, kemudian membalik setiap kata menggunakaan perulangan. Fungsi dari 'reversewordAndChars' ini akan mengambil sebuah sitring sebagai input serta mengembalikan string yang dibalik, lalu pada kode ini memuat adanya 'istringstream' yang berfungsi untuk memecah input menjadi kata-kata individual lalu pada setiap kata nantinya kode akan membalik dengan menggunakan loop yang akan mengulang dari akhir sampai dengan ke awal kata. Lalu saat kata dibalik nantinya akan disimpan di dalam sebuah stack. Dan setelah semua kata dibalik nantinya fungsi ini akan mengambil kata-kata dari stack serta menggabungkannya menjadi sebuah string yang dibalik. Lalu saat ada dalam fungsi 'main' kode akan meminta user untuk menginputkan sebuah kalimat dan kode akan memanggil fungsi 'reverseWordsAndChars' untuk digunakan mengubah input menjadi kalimat yang dibalik.
+Kode ini akan menjalankan struktur data queue menggunakan nama mahasiswa dan nim dengan menggunakan linked list. Fungsi dari kode ini yang diguanakan seperti, isFull() yang digunakan untuk mengembalikan nilai true jika antrian penuh dan false jika antrian belum penuh, lalu ada berupa isEmpty() untuk mengembalikan nilai true jika antrian kosong dan false jika antrian tidak kosong, selanjutnya berupa enqueueAntrian(Mahasiswa data) yang berfungsi untuk menambahkan data mahasiswa ke antrian, dilanjutkan ada fungsi dequeueAntrian() yang digunakan untuk menghapus data mahasiswa dari depan antrian, berikutnya berupa countQueue() untuk mengembalikan jumlah data mahasiswa yang ada di dalam antrian, lalu clearQueue() berguna untuk menghapus semua data mahasiswa dari antrian serta yang terakhir yaitu viewQueue() yang digunakan untuk menampilkan semua data mahasiswa yang ada di antrian. Lalu tidak lupa ada fungsi main yang digunakan untuk menjalankan seluruh operasi fungsi yang sudah disebutkan.
 
 #### Output
-![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/1a75b92b-4f2a-4104-87d6-ef3f1b9d60d5)
-Saat kode di jalankan, kode akan meminta user untuk menginputkan sebuah kalimat yang di mana kalimat tersebut diminta oleh user minimal tiga kata, lalu saat user sudah menginputkan beberapa kata, maka kode akan menjalankan perintahnya dengan membalik kata serta huruf tersebut. Lalu User akan ditampilkan sebuah hasil yang di mana hasil tersebut ditampilkan sebuah susunan kata yang dibalik dan susunan huruf yang dibalik.
+![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/dbdd5c6f-1ecc-4f1a-80db-3a49f37c6623)
+Pada kode di atas akan menampilkan sebuah output dengan nama dan nim dari setiap elemen antrian. Pada langkah pertama ada dua berupa nama dan nim lalu akan dipanggil dengan fungsi enqueuAntrian() lalu akan dipanggil dua kali untuk menambahkan dua elemen mahasiswa ke antrean lalu ditampilkan dengan fungsi viewQueue(). Kemudian pada langkah kedua fungsi akan menghapus elemen pertama dengan dequeueAntrian() lalu menggunakan viewQueue() untuk menampilkan semua elemen di antrian setelah elemen pertama dihapus serta pada langkah ketiga fungsi dequeueAntrian() akan menghapus seluruh elemen sera akan ditampilkan sera countQueue() untuk menghitung jumlah elemen yang terakhir yaitu 0.
 
 
 ## Kesimpulan
