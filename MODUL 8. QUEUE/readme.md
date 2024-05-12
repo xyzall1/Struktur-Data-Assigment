@@ -6,8 +6,8 @@
 
     Queue merupakan struktur data di mana data yang pertama kali dimasukkan adalah data yang pertama kali dapat dihapus atau bisa juga disebut dengan struktru data yang menggunakan mekanisme FIFO (First In First Out) [1]. Queue dalam kehidupan sehari-hari diibaratkan seperti antrean penjualan tiket kereta api, di mana orang yang pertama datang adalah orang yang pertama kali dilayani untuk memebeli tiket, jika ada orang baru yang datang akan membeli tiket, maka posisinya berada pada ururtan paling belakang dalam antrean tersebut. Orang yang berada pada posisi terakhir dalam antrean maka adalah orang yang terakhir kali dapat dilayani serta memeperoleh tiket. 
 
-    ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/e44d8e12-9068-47cd-85e7-4977d874d3d1)
-Gambar di atas merupakan sebuah ilustrasi terjakdinya stack jika kita adaptasikan pada kehidupan sehari-hari
+   ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/e44d8e12-9068-47cd-85e7-4977d874d3d1)
+    Gambar di atas merupakan sebuah ilustrasi terjakdinya stack jika kita adaptasikan pada kehidupan sehari-hari
 
 2. Jenis-Jenis Queue
 
