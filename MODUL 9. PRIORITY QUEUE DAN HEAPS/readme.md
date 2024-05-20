@@ -9,7 +9,7 @@
     - Pengertian Heap
     Heap yaitu pohon biner lengkap atau hampiir lengkap yang memenuhi atau struktur data unik yang terutama digunakan saat mengelola kumpulan data.
 
-    Heap sendiri dapat divisualisasikan sebagai hampir selesai pohon biner, dan beroperasi berdasarkan aturan ketat yang menjadikannya salah satu pilihan optimal dalam hal tugas seperti metode pengurutan, antrean prioritas, atau program penjadwalan. 
+        Heap sendiri dapat divisualisasikan sebagai hampir selesai pohon biner, dan beroperasi berdasarkan aturan ketat yang menjadikannya salah satu pilihan optimal dalam hal tugas seperti metode pengurutan, antrean prioritas, atau program penjadwalan. 
         - Pohon biner yaitu struktur di mana simpul induk paling banyak dapat mempunyai dua simpul anak.
         - Struktur data heap selesai jika, untuk ketinggalan tertentu, semua level terisi sleruuhnya, kecuali kemungkinan level terakhir yang diisi dari kiri kanan [4].
 
@@ -27,13 +27,13 @@
     
 4. Jenis-jenis Heap
 Adapun jenis-jenis heap diantaranya :
-- Max-Heap : kunci atau nilai yang ada di simpul manapun harus lebih besar dari kunci/nilai yang ada di kedua simpul anaknya. Kunci terbesar ada di simpul akar (root node) [6].
+    - Max-Heap : kunci atau nilai yang ada di simpul manapun harus lebih besar dari kunci/nilai yang ada di kedua simpul anaknya. Kunci terbesar ada di simpul akar (root node) [6].
 
-![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/110c8bce-20eb-4861-b658-b5298733b43f)
+    ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/110c8bce-20eb-4861-b658-b5298733b43f)
 
-- Min-Heap : merupakan kunci yang ada di simpul di mana pun harus lebih kecil dari kunci yang ada di kedua anaknya. Kunci terkecil ada di simpul akar.
+    - Min-Heap : merupakan kunci yang ada di simpul di mana pun harus lebih kecil dari kunci yang ada di kedua anaknya. Kunci terkecil ada di simpul akar.
 
-![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/7a448356-9f92-4aa8-ae63-dc139f777795)
+    ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/7a448356-9f92-4aa8-ae63-dc139f777795)
 
 5. Operasi-operasi pada Struktur Data Heap
 Operasi umum yang terlibat dalam heap di antaranya:
