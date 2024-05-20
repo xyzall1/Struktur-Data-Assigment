@@ -3,29 +3,31 @@
 
 ## Dasar Teori
 1. Pengertian
-    Queue merupakan struktur data di mana data yang pertama kali dimasukkan adalah data yang pertama kali dapat dihapus atau bisa juga disebut dengan struktru data yang menggunakan mekanisme FIFO (First In First Out) [1]. Queue dalam kehidupan sehari-hari diibaratkan seperti antrean penjualan tiket kereta api, di mana orang yang pertama datang adalah orang yang pertama kali dilayani untuk memebeli tiket, jika ada orang baru yang datang akan membeli tiket, maka posisinya berada pada ururtan paling belakang dalam antrean tersebut. Orang yang berada pada posisi terakhir dalam antrean maka adalah orang yang terakhir kali dapat dilayani serta memeperoleh tiket. 
 
-![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/e44d8e12-9068-47cd-85e7-4977d874d3d1)
-Gambar di atas merupakan sebuah ilustrasi terjakdinya stack jika kita adaptasikan pada kehidupan sehari-hari
+    Queue merupakan struktur data di mana data yang pertama kali dimasukkan adalah data yang pertama kali dapat dihapus atau bisa juga disebut dengan struktru data yang menggunakan mekanisme FIFO (First In First Out) [1]. Queue dalam kehidupan sehari-hari diibaratkan seperti antrean penjualan tiket kereta api, di mana orang yang pertama datang adalah orang yang pertama kali dilayani untuk memebeli tiket, jika ada orang baru yang datang akan membeli tiket, maka posisinya berada pada ururtan paling belakang dalam antrean tersebut. Orang yang berada pada posisi terakhir dalam antrean maka adalah orang yang terakhir kali dapat dilayani serta memeperoleh tiket. 
 
 2. Jenis-Jenis Queue
 
     1. Simple Queue
         Simple queue merupakan struktur data queue yang paling dasar di mana ada yang berupa penyisipan item yang dilakukan oleh simpul belakang (rear atau tail) serta adanya penghapusan yang terjadi di simpul depan (front atau head).
+
         ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/fb6e7859-6cd9-468a-941e-83a218396a49)
 
 
     2. Circular Queue
         Pada jenis ini circular queue, memiliki simpul terakhir terhubung ke simpul pertama. Queue jenis ini juga akan dikenal sebagai ring buffer dikarenakan semua ujungnya terhubung ke ujung yang lain. Penyisispan ini terjadi karena di akhri antrean serta penghapusan di depan antrean.
+
         ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/62e65cc1-0c25-4a58-b943-bb52085e5aab)
 
 
     3. Priority Queue
         Merupakan salah satu struktur data queuue yang di mana simpul akan memiliki beberapa prioritas yang telah ditentukan. Simpul dengan prioritas terbesar akan menjadi yang pertama yang akan dihapus dari antrean. Sedangkan penyisipan item terjadi sesuai urutan kedatangannya.
+
         ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/7bc7048e-df36-4faa-822c-332638a17b5e)
 
     4. Double Ended Queue (Dequeue)
         Dalam jenis ini atau Double-ended queue (dequeue), operasi penyisipan serta penghapusan dapat terjadi di ujung depan serta belakang dari queue [2].
+
         ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/4d88e718-8a9d-404a-bac3-39813adc43c0)
 
 3. Karakteristik Queue
@@ -176,7 +178,7 @@ Kode ini menggunakan fungsi maksimalQueue untuk mendefinisikan konstanta menjadi
 
 #### Output:
 ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/b2e4ef4e-79a0-41ce-8b19-fb8b4a685058)
-Pada output di atas akan langsung menampilkan output kepada user tanpa melakukan input. Kode ini akan menampilkan data antrean teller yang akan diisi atau ditambahkan Andi dan Maya. Lalu yang ditampilakan antrean pertama yaitu Andi lalu dilanjutkan Maya serta antrean ketiga sampai kelima kosong berarti dengan jumlah antrean hanya dua. Lalu antrean yang pertama yaitu Andi sudah selesai maka, Maya yang antrean berikutnya akan maju ke posisi pertama lalu terjadi antrean kedua hingga kelima kosong dengan jumlah antrean satu. Jika sudah maka Maya selesai lalu keluar dari antrean maka data antrean kosong serta jumlah antrean kososng. Hal ini menunjukkan bahwasannya kode berjalan dengan benar yaitu dapat  menambah, menghaous, serta menampilkan elemen dnegan benar sesuai perintah.
+Pada output di atas akan langsung menampilkan output kepada user tanpa melakukan input. Kode ini akan menampilkan data antrean teller yang akan diisi atau ditambahkan Andi dan Maya. Lalu yang ditampilakan antrean pertama yaitu Andi lalu dilanjutkan Maya serta antrean ketiga sampai kelima kosong berarti dengan jumlah antrean hanya dua. Lalu antrean yang pertama yaitu Andi sudah selesai maka, Maya yang antrean berikutnya akan maju ke posisi pertama lalu terjadi antrean kedua hingga kelima kosong dengan jumlah antrean satu. Jika sudah maka Maya selesai lalu keluar dari antrean maka data antrean kosong serta jumlah antrean kosong. Hal ini menunjukkan bahwasannya kode berjalan dengan benar yaitu dapat  menambah, menghapus, serta menampilkan elemen dnegan benar sesuai perintah.
 
 ## Unguided 
 
@@ -184,33 +186,92 @@ Pada output di atas akan langsung menampilkan output kepada user tanpa melakukan
 
 ```C++
 #include <iostream>
-#include <stack>
-#include <string>
 
 using namespace std;
 
-int main() {
-    string input;
-    cout << "Kalimat : ";
-    getline(cin, input);
+struct Node {
+    string data;
+    Node* next;
+};
 
-    stack<char> s;
-    for (char c : input) {
-        s.push(c);
-    }
+Node* front = nullptr;
+Node* back = nullptr;
+int count = 0;
 
-    string reversed = "";
-    while (!s.empty()) {
-        reversed += s.top();
-        s.pop();
-    }
+const int maksimalQueue = 5;
 
-    if (input == reversed) {
-        cout << "Kalimat tersebut adalah polindrom" << endl;
+bool isFull() {
+    return count == maksimalQueue;
+}
+
+bool isEmpty() {
+    return count == 0;
+}
+
+void enqueueAntrian(string data) {
+    if (isFull()) {
+        cout << "Antrian Penuh" << endl;
     } else {
-        cout << "Kalimat tersebut adalah bukan polindrom." << endl;
+        Node* newNode = new Node();
+        newNode->data = data;
+        newNode->next = nullptr;
+        if (isEmpty()) {
+            front = newNode;
+            back = newNode;
+        } else {
+            back->next = newNode;
+            back = newNode;
+        }
+        count++;
     }
+}
 
+void dequeueAntrian() {
+    if (isEmpty()) {
+        cout << "Antrian kosong" << endl;
+    } else {
+        Node* temp = front;
+        front = front->next;
+        delete temp;
+        count--;
+        if (isEmpty()) {
+            back = nullptr;
+        }
+    }
+}
+
+int countQueue() {
+    return count;
+}
+
+void clearQueue() {
+    while (!isEmpty()) {
+        dequeueAntrian();
+    }
+}
+
+void viewQueue() {
+    Node* temp = front;
+    int i = 1;
+    cout << "Data antrian teller: " << endl;
+    while (temp != nullptr) {
+        cout << i << ". " << temp->data << endl;
+        temp = temp->next;
+        i++;
+    }
+}
+
+int main() {
+    enqueueAntrian("Aliana");
+    enqueueAntrian("Sawafi");
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    dequeueAntrian();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    clearQueue();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
     return 0;
 }
 ```
@@ -329,7 +390,7 @@ Kode ini akan menjalankan struktur data queue menggunakan nama mahasiswa dan nim
 
 #### Output
 ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/dbdd5c6f-1ecc-4f1a-80db-3a49f37c6623)
-Pada kode di atas akan menampilkan sebuah output dengan nama dan nim dari setiap elemen antrian. Pada langkah pertama ada dua berupa nama dan nim lalu akan dipanggil dengan fungsi enqueuAntrian() lalu akan dipanggil dua kali untuk menambahkan dua elemen mahasiswa ke antrean lalu ditampilkan dengan fungsi viewQueue(). Kemudian pada langkah kedua fungsi akan menghapus elemen pertama dengan dequeueAntrian() lalu menggunakan viewQueue() untuk menampilkan semua elemen di antrian setelah elemen pertama dihapus serta pada langkah ketiga fungsi dequeueAntrian() akan menghapus seluruh elemen sera akan ditampilkan sera countQueue() untuk menghitung jumlah elemen yang terakhir yaitu 0.
+Pada kode di atas akan menampilkan sebuah output dengan nama dan nim dari setiap elemen antrian. Pada langkah pertama ada dua berupa nama dan nim lalu akan dipanggil dengan fungsi enqueuAntrian() lalu akan dipanggil dua kali untuk menambahkan dua elemen mahasiswa ke antrean lalu ditampilkan dengan fungsi viewQueue(), lalu berupa fungsi countQueue() untuk menghitung jumlah antrean yaitu 2 . Kemudian pada langkah kedua fungsi akan menghapus elemen pertama dengan dequeueAntrian() lalu menggunakan viewQueue() untuk menampilkan semua elemen di antrian setelah elemen pertama dihapus, lalu berupa fungsi countQueue() untuk menghitung jumlah antrean yaitu 1 serta pada langkah ketiga fungsi dequeueAntrian() akan menghapus seluruh elemen sera akan ditampilkan sera countQueue() untuk menghitung jumlah elemen yang terakhir yaitu 0.
 
 
 ## Kesimpulan
@@ -354,16 +415,14 @@ Pada kode di atas akan menampilkan sebuah output dengan nama dan nim dari setiap
 [1] K., Roby, 2018 "Artikel Struktur Data", Universitas Mitra Indonesia, Sistem Informasi
 
 
-[2] Sihombing, J. 2019. "Penerapan Stack Dan Queue
-Pada Array Dan Linked List Dalam Java", Jurnal
-Ilmiah Infokom, 7(2), 15–24.
+[2] Sihombing, J. 2019. "Penerapan Stack Dan Queue Pada Array Dan Linked List Dalam Java", Jurnal Ilmiah Infokom, 7(2), 15–24.
 
 [3] Sjukani, Moh,2012,Struktur Data "Algoritma dan Struktur Data dengan C",C++,Jakarta:Mitra
-Wacana Media
+Wacana Media.
 
 [4] A. Aliyanto, "Sistem Pembelajaran Algoritma stack dam queue dengan pendekatan problem based learning untuk mendukung pembelajaran struktur data," Seminar nasional Aplikasi Teknologi Informasi, pp. E29-E33, 2013. 
 
 [5] Trivusi, "Struktur Data Queue: Pengertian, Jenis, dan Kegunaannya", 2023. Diakses pada 12 Mei 2024. https://www.trivusi.web.id/2022/07/struktur-data-queue.html
 
-[6] A. S. Putra, “2018 Artikel Struktur Data, Audit Dan Jaringan Komputer,” 2018
+[6] A. S. Putra, “2018 Artikel Struktur Data, Audit Dan Jaringan Komputer,” 2018.
 
