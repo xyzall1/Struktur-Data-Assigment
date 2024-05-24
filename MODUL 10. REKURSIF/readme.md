@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul Rekursif</h1>
+# <h1 align="center">Laporan Praktikum Modul Priority dan Queue</h1>
 <p align="center">Rosa Nur Aliana Sawafi</p>
 
 ## Dasar Teori
@@ -50,27 +50,120 @@ Operasi umum yang terlibat dalam heap di antaranya:
 
 
 ## Guided 
-### 1. Rekursif Langsung (Direct Recursion)
 
 ```C++
 #include <iostream>
-using namespace std;
+#include <algorithm>
 
-//Code ini berfungsi untuk melakukan hitung mundur
-//dari angka yang diinputkan
+int H[50];
+int heapSize = -1;
 
-void countdown(int n) {
-    if (n == 0) {
-        return;
+int parent(int i) {
+    return (i - 1) / 2;
+}
+
+int leftChild(int i) {
+    return ((2 * i) + 1);
+}
+
+int rightChild(int i) {
+    return ((2 * i) + 2);
+}
+
+void shiftUp(int i) {
+    while (i > 0 && H[parent(i)] < H[i]) {
+        std::swap(H[parent(i)], H[i]);
+        i = parent(i);
     }
-    cout << n << " ";
-    countdown(n - 1);
+}
+
+void shiftDown(int i) {
+    int maxIndex = i;
+    int l = leftChild(i);
+    if (1 <= heapSize && H[l] > H[maxIndex]) {
+        maxIndex = 1;
+    }
+    int r = rightChild(i);
+    if (r <= heapSize && H[r] > H[maxIndex]) {
+        maxIndex = r;
+    }
+    if (i != maxIndex) {
+        std::swap(H[i], H[maxIndex]);
+        shiftDown(maxIndex);
+    }
+}
+
+void insert(int p) {
+    heapSize = heapSize + 1;
+    H[heapSize] = p;
+    shiftUp(heapSize);
+}
+
+int extractMax() {
+    int result = H[0];
+    H[0] = H[heapSize];
+    heapSize = heapSize - 1;
+    shiftDown(0);
+    return result;
+}
+
+void changePriority(int i, int p) {
+    int oldp = H[i];
+    H[i] = p;
+    if (p > oldp) {
+        shiftUp(i);
+    } else {
+        shiftDown(i);
+    }
+}
+
+int getMax() {
+    return H[0];
+}
+
+void remove(int i) {
+    H[i] = getMax() + 1;
+    shiftUp(i);
+    extractMax();
 }
 
 int main() {
-    cout << "Rekursi Langsung: ";
-    countdown(5); //5 merupakan input nya
-    cout << endl;
+    insert(45);
+    insert(20);
+    insert(14);
+    insert(12);
+    insert(31);
+    insert(7);
+    insert(11);
+    insert(13);
+    insert(7);
+
+    std::cout << "Priority Queue : ";
+    for (int i = 0; i <= heapSize; ++i) {
+        std::cout << H[i] << " ";
+    }    
+    std::cout << "\n";
+
+    std::cout << "Node with maximum priority : " << extractMax() << "\n";
+
+    std::cout << "Priority queue after extracting maximum : ";
+    for (int i = 0; i <= heapSize; ++i) {
+        std::cout << H[i] << " ";
+    }
+    std::cout << "\n";
+
+    changePriority(2, 49);
+    std::cout << "Priority queue after priority change : ";
+    for (int i = 0; i <= heapSize; ++i) {
+        std::cout << H[i] << " ";
+    }
+    std::cout << "\n";
+    
+    remove(3);
+    std::cout << "Priority queue after removing the element : ";
+    for (int i = 0; i <= heapSize; ++i) {
+        std::cout << H[i] << " ";
+    }
     return 0;
 }
 ```
@@ -91,37 +184,6 @@ Kode di atas menggunakan kode dengan struktur data heap. Berikut penjelasan bebe
 ![Guided 1](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/06560732-ea45-4f64-a59f-8435d7ded04f)
 
 Pada output di atas akan ditampilkan sebuah sebuah priority queue yang berisikan [45 31 14 13 20 7 11 12 7] lalu dalam node tersebut akan dicari nilai maksimal prioritas nya yaitu ditemukan 45, setelah itu node akan di ekstrak untuk nilai maksimum setelah itu node akan merubah prioritas yang terbaru serta menjadi susunan [49 20 31 13 7 7 11 12] setelah itu kode akan menjalankan penghapusan elemen menjadi [49 12 31 20 7 7 11].
-
-### 2. Rekursif Tidak Langsung (Indirect Recursion)
-
-```C++
-#include <iostream>
-using namespace std;
-
-void functionB(int n);
-
-void functionA(int n) {
-    if (n > 0) {
-        cout << n << " ";
-        functionB(n - 1); // Panggilan rekursif tidak langsung
-    }
-}
-
-void functionB(int n) {
-    if (n > 0) {
-        cout << n << " ";
-        functionA(n / 2); // Panggilan rekursif tidak langsung
-    }
-}
-
-int main() {
-    int num = 5;
-    cout << "Rekursif Tidak Langsung: ";
-    functionA(num);
-    return 0;
-}
-
-```
 
 ## Unguided 
 
