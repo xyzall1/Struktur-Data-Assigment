@@ -9,6 +9,7 @@
     ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/a5b699f1-083a-4f88-b3a6-2deaf7bc71f2)
 
 2. Fungsi Hash
+
     Fungsi hash diguankan untuk mengambil kunci serta mengembalikan indeks ke dalam tabel hash. Tujuan dari funhsi untuk mendistribusikan kunci secara merata di seluruh tabel hash, meminimalkan tabrakan atau hal ini terjadi dikarenakan ketia dua kunci ke indeks yang sama.
     Fungsi hash yang umum meliputi :
     - Metode Pembagian : % Kunci Ukuran Hash Table
