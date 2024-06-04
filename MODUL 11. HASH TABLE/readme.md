@@ -3,6 +3,7 @@
 
 ## Dasar Teori
 1. Pengertian
+
     Hash Table yaitu merupakan struktur data yang mendasar secara efisien menyimpan serta mengambil data dengan cara yang memungkinkan akses cepat. Proses ini melibatkan pemetaan data ke indeks tertentu dalam hash table, hash table sendiri memungkinkan untuk melakukan proses pengambilan informasi dengan berdasarkan kuncinya. Metode ini umumnya digunakan dalam database, sistem caching, serta berbagai macam aplikasi pemograman untuk mengoptimalkan operasi pencarian serta pengambilan. [1]
 
     ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/a5b699f1-083a-4f88-b3a6-2deaf7bc71f2)
