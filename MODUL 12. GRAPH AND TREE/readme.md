@@ -4,19 +4,24 @@
 ## Dasar Teori
 1. Graph 
     - A. Pengertian Graph
+      
         Graph merupakan salah satu struktur data yang mendasar lalu digunakan dalam ilmu komputer serta untuk mempresentasikakan hubungan antar objek [1]. Dimana dalam graph ini ada beberapa kumpulan node (disebut dengan simpul) serta sisi yang menghubungkannya, node (disebut juga simpul) node ini dapat mewakili entitas, seperti orang, tempat, atau benda, sedangkan tepi mewakili hubungan antara entitas tersebut. Graph ini dapat mewakili seperti jaringan sosial, jaringan transportrasi serta jaringan komputer. 
 
     - B. Jenis Graph 
-        1. Graph Berarah 
+        1. Graph Berarah
+           
             graph yang memiliki tepi berarah dikenal sebagai graph berarah.
             ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/ae8aff7e-6f76-44f9-b5d1-c3294d0d6786)
-        2. Graph tak berarah
+        3. Graph tak berarah
+           
             graph dengan tepi tidak berarah dikenal sebagai graph tidak berarah. Graph berarah yaiu graph yang semua sisinya berarah satu arah, sedangkan graph tidak berarah yaitu graph yang semua sisinya dua arah.
             ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/e1a8edef-6552-4f5a-81d3-e716ef85b87c)
-        3. Weighted Graph
+        5. Weighted Graph
+           
             Jenis graph yang cabangnya diberi lebel bobot berupa bilangan numerik. Pemberian ini digunakan untuk memudahlan algoritma dalam menyelesaikan masalah.
             ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/c9844861-d1dd-4cbe-b5ae-1d0390d8fdd4)
-        4. Unweighted Graph
+        7. Unweighted Graph
+           
             Jenis graph yang tidak memiliki bobot pada koneksinya, namun hanya mempertimbangkan apakah dua node saling terhubung atau tidak [3].
     - C. Karakteristik Graph
         Graph memiliki karakteristik sebagai berikut.
@@ -37,7 +42,8 @@
 
 
 2. Tree
-    - A. Pengertian Tree 
+    - A. Pengertian Tree
+      
     Tree atau dapat disebut dengan struktur data hierarki yang terdiri dari node-node yang dihubungkan oleh tepian. Setiap node ini dapat memiliki beberapa node anak, tetapi hanya memiliki satu node induk. Node paling atas pada pohon sendiri disebut dengan simpul akar.
 
     - B. Hal yang ada dalam pohon
@@ -68,13 +74,17 @@
         - Menawarkan operasi pencarian dan penyisipan yang efisien.
     - F. Jenis Tree
         - General Tree
+          
             Tree yang tidak memiliki batasan jumlah node pada hierarki, jadi setiap simpul atau node bebas memiliki berapapun child node.
-        -  Binary Tree  
-            Tree yang simpulnya hanya dapat memiliki paling banyak 2 simpul anak (child node), biasanya kedua simpul tersebut niasa disebut simpul kiri (left node) dengan simpul kanan (right node). 
+        -  Binary Tree
+          
+            Tree yang simpulnya hanya dapat memiliki paling banyak 2 simpul anak (child node), biasanya kedua simpul tersebut niasa disebut simpul     kiri (left node) dengan simpul kanan (right node). 
         -  Balanced Tree
+          
             Apabila tinggi dari subtree sebelah kiri dan subtree sebelah kanan sama atau kalaupun berbeda hanya berbeda 1, maka disebut sebagai balanced tree. 
             ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/d16b6e8f-7398-4181-b799-0b2736d6682c)
         - Binary Search Tree
+          
             Tree ini memiliki nilai pada simpul sebelah kiri lebih kecil daripada induknya, sedangkan nilai simpul sebelah kanan lebih besar dari induknya. jenis tree ini biasanya digunakan untuk algoritma pencarian dan pengurutan [2].
             ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/84edb7dd-6f6d-4631-8db6-bc24890b51ea)
 
@@ -139,7 +149,7 @@ Pada output di atas menamppilkan suatu grafik adjacency list yang di mana mempre
 - Kemudian baris ketiga kota Bekasi yang  terhubung dengan kota Ciamis dengan jarak 6 dan kota Cianjur dengan jarak 5.
 - Begitupun seterusnya.
 
-2. 
+2. Program Tree
 ```C++
 #include <iostream>
 using namespace std;
