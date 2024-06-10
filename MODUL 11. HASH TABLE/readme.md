@@ -3,11 +3,13 @@
 
 ## Dasar Teori
 1. Pengertian
+
     Hash Table yaitu merupakan struktur data yang mendasar secara efisien menyimpan serta mengambil data dengan cara yang memungkinkan akses cepat. Proses ini melibatkan pemetaan data ke indeks tertentu dalam hash table, hash table sendiri memungkinkan untuk melakukan proses pengambilan informasi dengan berdasarkan kuncinya. Metode ini umumnya digunakan dalam database, sistem caching, serta berbagai macam aplikasi pemograman untuk mengoptimalkan operasi pencarian serta pengambilan. [1]
 
     ![image](https://github.com/xyzall1/Struktur-Data-Assigment/assets/161272189/a5b699f1-083a-4f88-b3a6-2deaf7bc71f2)
 
 2. Fungsi Hash
+
     Fungsi hash diguankan untuk mengambil kunci serta mengembalikan indeks ke dalam tabel hash. Tujuan dari funhsi untuk mendistribusikan kunci secara merata di seluruh tabel hash, meminimalkan tabrakan atau hal ini terjadi dikarenakan ketia dua kunci ke indeks yang sama.
     Fungsi hash yang umum meliputi :
     - Metode Pembagian : % Kunci Ukuran Hash Table
@@ -324,7 +326,7 @@ Kode di atas akan menampilkan sebuah tampilan seperti gambar di atas untuk mence
 
 ## Unguided 
 
-### ### 1. Implementasikan hash table untuk menyimpan data mahasiswa. Setiap mahasiswa memiliki NIM dan nilai. Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan nilai. Dengan ketentuan :
+### 1. Implementasikan hash table untuk menyimpan data mahasiswa. Setiap mahasiswa memiliki NIM dan nilai. Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan nilai. Dengan ketentuan :
     a.	Setiap mahasiswa memiliki NIM dan nilai.
     b.	Program memiliki tampilan pilihan menu berisi poin C.
     c.	Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan rentang nilai (80 – 90).
