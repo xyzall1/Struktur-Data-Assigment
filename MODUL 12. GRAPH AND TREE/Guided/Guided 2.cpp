@@ -1,4 +1,4 @@
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
 struct TNode {
@@ -40,10 +40,10 @@ void postOrder(TNode *node) {
 
 int main() {
     TNode *zero = new TNode(0);
-    //0
+    // 0
     // /\
-    // NULL NULL
-}
+    // NULL
+
     TNode *one = new TNode(1);
     TNode *five = new TNode(5);
     TNode *seven = new TNode(7);
@@ -60,35 +60,37 @@ int main() {
     // /\
     // 1 9
 
-    seven->left = zero;
+    one->left = zero;
     // 7
     // /\
     // 1 9
-    // / \
+    // /\
     // 0 NULL
 
     one->right = five;
     // 7
     // /\
     // 1 9
-    // / \
+    // /\
     // 0 5
 
     nine->left = eight;
     // 7
     // /\
     // 1 9
-    // / \ / \
-    // 0 5 8 NULL
+    // /\
+    // 0 5
+    // /
+    // 8 NULL
 
     preOrder(seven);
     cout << endl;
-    
+
     inOrder(seven);
     cout << endl;
 
     postOrder(seven);
-    cout endl;
-    
+    cout << endl;
 
     return 0;
+}
